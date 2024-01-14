@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = +prompt("Nhap vao so thu nhat");
+    let b = +prompt("Nhap vao so thu 2");
+    if(isNaN(a)||isNaN(b)){
+        console.log("So khong hop le");
+    }else{
+        console.log("Nhap phep tinh ban muon");
+        console.log("1.Phep cong")
+        console.log("2.Phep tru");
+        console.log("3.Phep nhan");
+        console.log("4.Phep chia");
+    let choice = +prompt("Nhap so tuong ung voi phep tinh");
+    switch(choice){
+            case 1:
+            console.log("Ket qua la:", a+b);
+            break;
+            case 2:
+            console.log("Ket qua la:", a-b);
+            break;    
+            case 3:
+            console.log("Ket qua la:", a*b);
+            break;
+            case 4:
+            console.log("Ket qua la:", a/b);
+            break;                      
+    }
+    }
+</script>
+</html>

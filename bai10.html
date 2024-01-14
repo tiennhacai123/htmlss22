@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let userScore = prompt("Nhập điểm của bạn:");
+
+if (userScore) {
+    console.log("Điểm của bạn là: " + userScore);
+    // Điều này sẽ được thực hiện nếu userScore là một giá trị truthy
+} else {
+    console.log("Vui lòng nhập điểm.");
+    // Điều này sẽ được thực hiện nếu userScore là một giá trị falsy (ví dụ: null, undefined, '', 0)
+}
+
+</script>
+</html>

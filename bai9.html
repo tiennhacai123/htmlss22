@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let month = +prompt("Nhap vao thang");
+let year = +prompt("Nhap vao nam");
+if(1<=month&&month<=12 && 2000<=year&&year<=2025){
+switch(month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+        console.log("Thang co 30 ngay");
+        break;
+        case 4:
+        case 6:
+        case 8:
+        console.log("Thang co 31 ngay");
+        break;
+        case 2:
+        console.log("thang co 28 ngay");
+        break;
+}
+
+}else{
+    console.log("Khong phu hop");
+}    
+</script>
+</html>

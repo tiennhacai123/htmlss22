@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = +prompt("Nhap vao so a:");
+    let b = +prompt("Nhap vao so b:");
+    if(isNaN(a) || isNaN(b)){
+        console.log("So nhap vao khong hop le");
+    }else{
+        if(a % b ===0){
+            console.log("a chia het cho b");
+        }else if(b%a ===0){
+            console.log("b chia het cho a");
+        }else{
+            console.log("a va b khong chia het cho nhau");
+        }
+    }
+</script>
+</html>

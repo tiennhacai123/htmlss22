@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let a = prompt("Nhap vao a:");
+let b = prompt("Nhap vao b");
+let c = prompt("Nhap vao c:");
+let delta = Math.sqrt(b*b-4*a*c);
+if(isNaN(a) || isNaN(b) || isNaN(c)){
+    console.log("So khong hop le");
+}else{
+    if(a == 0){
+        console.log("pt co nghiem la x =",-c/b)
+    }else if(delta>0){
+        console.log("pt co nghiem la x1=",(-b+delta)/(2*a));
+        console.log("pt co nghiem la x2=",(-b-delta)/(2*a));
+    }else if(delta==0){
+        console.log("pt co nghiem kep la x=",-b/(2*a));
+    }else{
+        console.log("pt vo nghiem");
+    }
+}
+</script>
+</html>

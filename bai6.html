@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let num = +prompt("Nhap vao 1 so co 4 chu so");
+if( 1000<=num&&num<=9999 && Number .isInteger(num)){
+    let hangNghin = Math.floor(num/1000);
+    let hangTram = Math.floor(num%1000/100);
+    let hangChuc = Math.floor(num%100/10);
+    let hangDv = Math.floor(num%10);
+    console.log("So hang nghin la:",hangNghin);
+    console.log("So hang tram la:",hangTram);
+    console.log("So hang chuc la:",hangChuc);
+    console.log("So hang dvi la:",hangDv);
+}else{
+    console.log("So khong hop le");
+}
+</script>
+</html>

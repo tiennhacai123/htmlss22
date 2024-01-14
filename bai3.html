@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num = +prompt("Nhap vao mot so");
+    
+    if (isNaN(num) || num < 0) {
+        console.log("Vui long nhap mot so duong");
+    } else {
+        let sqrtNum = Math.sqrt(num);
+        if (Number.isInteger(sqrtNum)) {
+            console.log("Day la so chinh phuong");
+        } else {
+            console.log("Day khong phai la so chinh phuong");
+        }
+    }
+</script>
+</html>
